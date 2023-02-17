@@ -4,7 +4,7 @@
  *  Description : use putchar to print output-alphabets in lowercase
  *  Return: 0
 */
-int main (void)
+int main(void)
 {
 	char x = 'a';
 
