@@ -3,15 +3,17 @@
 
 /**
  *  main - Entry Point
- *  Description : Get a number and print its value input
- *  And test/evaluate if it is positive, negative or zero
+ *  Description : use putchar to print output-alphabets in lowercase
  *  Return: 0
 */
 int main(void)
 {
-	int n;
-	for (n= 'a'; n='z'; n++)
-		putchar(n);
-		putchar('\n');
-		getn();
-}
+	char x = 'a';
+	while (alpha <= 'z')
+	{
+		putchar(x);
+		x++;
+	}
+	putchar('\n');
+
+	return (0);
