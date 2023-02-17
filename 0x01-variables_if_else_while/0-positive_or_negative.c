@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
 /**
  *  main - Entry Point
- *
- *  Return- Always 0 (Success)
+ *  Description : Get a number and print its value input
+ *  And test/evaluate if it is positive, negative or zero
+ *  Return: 0
 */
 int main(void)
 {
