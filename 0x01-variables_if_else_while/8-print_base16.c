@@ -2,20 +2,19 @@
 
 /**
  *  main - Entry Point
- *  Description : prints all the numbers of base 16 in lowercase, followed by a new line.
+ *  Description : prints all the numbers of base 16 in lowercase
+ *  Must add a new line.
  *  Return: 0
 */
 int main(void)
 {
-	int x;
-	char lower = 'a';
+	char x;
 
-	while (x = 0; x < 16; x++ && lower <= 'z')
-	{
-		putchar("%i", x);
-		putchar(lower);
-		lower++;
-	}
+	for (x = 0; x <= 9)
+		putchar(x);
+		x++;
+	for (x = 'a'; x <= 'z'; x++)
+		putchar(x);
 	putchar('\n');
 
 	return (0);
