@@ -19,13 +19,13 @@ int main(void)
 	{
 		for (y = x + 1; y < 9; y++)
 		{
-			for (z = x + y + 2; z < 9; z++)
+			for (z = x + y + 1; z < 9; z++)
 			{
 				putchar(x + '0');
 				putchar(y + '0');
 				putchar(z + '0');
 
-				if (x < 8 && y < 8 && z < 8)
+				if (x < 9 && y < 9 && z < 8)
 				{
 					putchar(',');
 					putchar(' ');
