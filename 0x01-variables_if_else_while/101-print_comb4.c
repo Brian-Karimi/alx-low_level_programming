@@ -19,7 +19,7 @@ int main(void)
 	{
 		for (y = x + 1; y < 9; y++)
 		{
-			for (z = x + y + 1; z < 9; z++)
+			for (z = x + y + 2; z < 9; z++)
 			{
 				putchar(x + '0');
 				putchar(y + '0');
