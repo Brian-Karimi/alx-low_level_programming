@@ -11,12 +11,15 @@ int main(void)
 {
 	int x;
 	/** use of ASCII Code since we are using putchar function*/
-	for (x = 48; x < 58; x++)
-		putchar(x);
-		if (x < 57)
-			putchar(44);
-			putchar(32);
-	putchar('\n');
-
-	return (0);
+	for (x = '0'; x <= '9';  x++)
+	{
+		putchar(x + '0');
+		if (x <= 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		putchar('\n');
+		
+		return (0);
 }
