@@ -11,10 +11,10 @@ int main(void)
 {
 	int x;
 	/** use of ASCII Code since we are using putchar function*/
-	for (x = 0; x <= 9;  x++)
+	for (x = 0; x < 10;  x++)
 	{
 		putchar(x + '0');
-		if (x < 8)
+		if (x < 9)
 		{
 			putchar(',');
 			putchar(' ');
