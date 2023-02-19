@@ -25,7 +25,7 @@ int main(void)
 				putchar(y + '0');
 				putchar(z + '0');
 
-				if (x == 7 && y == 8 && z == 9)
+				if (x <= 7 && y <= 8 && z <= 9)
 					continue;
 				{
 					putchar(',');
