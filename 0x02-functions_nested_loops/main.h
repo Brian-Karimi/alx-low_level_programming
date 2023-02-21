@@ -1,13 +1,5 @@
-#ifndef main_H
-#define main_H_
-/**
- * main -entry point
- *
- * Descrption: Main.h
- * Return : 0
- */
-
-int main(void)
+#ifndef MAIN_H
+#define MAIN_H
 {
 int _putchar(char c);
 void print_alphabet(void);
@@ -27,7 +19,6 @@ void pr_3_digit(int charcode, int fmt);
 void print_times_table(int n);
 void print_spaces(int n);
 void print_zero(void);
-return (0);
 }
 
 

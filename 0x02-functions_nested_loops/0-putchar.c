@@ -7,17 +7,14 @@
  *
  * Return:0
  */
-int _putchar(char c)
+int main(void)
 {
+	char p[] = "_putchar";
+	int x;
+
+	for (x = 0; x < 8; x++)
 	{
-	       _putchar('_');
-	       _putchar('p');
-	       _putchar('u');
-	       _putchar('t');
-	       _putchar('c');
-	       _putchar('h');
-	       _putchar('a');
-	       _putchar('r');
+		_putchar(p[x]);
 	}
 	_putchar('\n');
 	return (0);
