@@ -10,14 +10,14 @@
 */
 int _isalpha(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90 || c >= 97 && c <= 122)
 	{
-		if (c >= 97 && c < 123)
-		{
-			return (1);
-		}
-		else
-			return (0);
+		return (1);
 	}
-	_putchar('\n');
+		else
+		{
+			return (0);
+		}
+	}_putchar('\n');
+	return
 }
