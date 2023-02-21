@@ -3,7 +3,7 @@
 /**
  * main- entry point
  * Description: Printing all alphabets in lowercase
- *
+ * print_alphabet- Printing all aphabets in lowercase
  * Return:0 success
  *
  */
@@ -16,5 +16,4 @@ void print_alphabet(void)
 		_putchar(x);
 	}
 	_putchar('\n');
-	return;
 }
