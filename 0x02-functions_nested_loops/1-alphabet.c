@@ -7,16 +7,13 @@
  * Return:0 success
  *
  */
-void print_alphabet(void);
-
-int main(void)
+void print_alphabet(void)
 {
-	char az[] = "abcdefghijklmnopqrstuvwxyz";
 	int x;
 
-	for (x = 'a'; x <= 'z'; x++)
+	for (x = 'a'; x < 'z'; x++)
 	{
-		_putchar(az[x]);
+		_putchar(x);
 	}
 	_putchar('\n');
 	return (0);
