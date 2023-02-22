@@ -10,17 +10,11 @@
  * Return: 0
  */
 int main(void)
-{	int x;
+{
+	int x;
 
-	srand(time(0));
-	x = rand() - RAND_MAX / 2;
-	/* your code goes there */
-	if (x > 0)
-		printf("%i is positive\n", x);
-	else if (x < 0)
-		printf("%i is negative\n", x);
-	else
-		printf("%i is zero\n", x);
+	x = 0;
+	positive_or_negative(x);
+
 	return (0);
-
 }
