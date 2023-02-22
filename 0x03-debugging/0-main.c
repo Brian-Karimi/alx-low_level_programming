@@ -1,19 +1,16 @@
 #include "main.h"
 
 /**
- * main- entry point
- * positive_or_negative- assigns a random number to the variable n
- * variables can be positive or negative
- *
- * @x- input as integer
- *
- * Return: 0
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
 int main(void)
 {
-	int i = 0;
-	
-	positive_or_negative(i);
+        int i;
 
-	return (0);
+        i = 98;
+        positive_or_negative(i);
+
+        return (0);
 }
