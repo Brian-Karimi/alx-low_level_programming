@@ -4,7 +4,6 @@
  * print_numbers- prints all numbers in the range 0-9
  * Return: 0
  */
-
 void print_numbers(void)
 {
 	int x;
@@ -15,4 +14,3 @@ void print_numbers(void)
 	}
 	_putchar('\n');
 }
-
