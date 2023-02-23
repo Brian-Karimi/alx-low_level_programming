@@ -7,14 +7,12 @@
 
 void print_numbers(void)
 {
-	int x;
+	char x;
 
 	while (x >= 48 && x <= 57)
 	{
-		_putchar("%i", x);
+		_putchar(x);
 	}
 	_putchar('\n');
-
-	return (0);
 }
 
