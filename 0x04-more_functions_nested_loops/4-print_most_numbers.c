@@ -10,14 +10,9 @@ void print_most_numbers(void)
 	char c;
 
 	for (c = '0'; c <= '1'; c++)
-		_putchar(c);
 	{
-		for (c = '3'; c < '3'; c++)
-			_putchar(c);
-		{
-			for (c = '5'; c <= '9'; c++)
-				_putchar(c);
-		}
+		if (c != '2' && c != '4')
+		_putchar(c + '0');
 	}
 	_putchar('\n');
 }
