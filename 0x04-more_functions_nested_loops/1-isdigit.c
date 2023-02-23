@@ -8,13 +8,12 @@
  * Return: Always 0 for otherwise
  */
 
-int main (void)
+int main(void)
 {
 	char c;
 
-	while (c >= 48 && c <= 57; c ++)
+	while (c >= 48 && c <= 57)
 	{
-		printf("%c: %d\n", c, _isdigit(c)); 
 		return (1);
 	}
 	return (0);
