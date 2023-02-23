@@ -1,20 +1,14 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main-entry point/ code return
  * _isupper-checks if the input is uppercase
- * main - check the code.
- * Return: Always 0.
+ * @c: input integer
+ * Return: 1 if c is in uppercase and  0 if otherwise
  */
-int main(void)
+int _isupper(int c)
 {
-	char c;
-
-	while (c = 'A')
+	while (c >= 65 && c <= 90)
 	{
-		printf("%c: %d\n", c, _isupper(c));
-
 		return (1);
 	}
 	return (0);
