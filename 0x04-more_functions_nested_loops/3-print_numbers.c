@@ -7,10 +7,13 @@
 
 void print_numbers(void)
 {
-	char c;
+	char x;
 
-	for (c = '0'; c <= '9'; c++)
-	_putchar(c);
+	for (x >= 48; x <= 57; x++)
+	_putchar(x);
+
 	_putchar('\n');
+
+	return;
 }
 
