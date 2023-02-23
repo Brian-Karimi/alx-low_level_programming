@@ -8,11 +8,27 @@
  */
 void print_line(int n)
 {
-	char ch;
-
-	for (ch = 0; ch < n; ch++)
+	if (n > 0)
 	{
-		_putchar('_');
+		int x = 1;
+
+		while (x <= n)
+		{
+			_putchar('_');
+			x++;
+		}
 	}
 	_putchar('\n');
+}
+/**
+ * main- check code
+ * Return: 0
+ */
+int main(void)
+{
+	print_line(0);
+	print_line(2);
+	print_line(10);
+	print_line(-4);
+	return (0);
 }
