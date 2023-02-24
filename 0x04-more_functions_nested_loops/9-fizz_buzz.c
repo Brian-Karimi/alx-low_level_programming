@@ -27,10 +27,10 @@ int main(void)
 		{
 			printf("%d", x);
 		}
-		_putchar(' ');
+		putchar(' ');
 		
 	}
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
