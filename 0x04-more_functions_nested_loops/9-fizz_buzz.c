@@ -31,6 +31,10 @@ int main(void)
 		{
 			putchar(' ');
 		}
+		while (x == 100)
+		{
+			!putchar(' ');
+		}
 	}
 	putchar('\n');
 
