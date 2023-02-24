@@ -9,7 +9,7 @@ int main(void)
 {
 	int x;
 
-	for (x = 0; x <= 100; x++)
+	for (x = 1; x <= 100; x++)
 	{
 		if ((x % 3) == 0)
 		{
@@ -25,7 +25,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d", x);
+			printf("%i", x);
 		}
 		if (x < 100)
 		{
