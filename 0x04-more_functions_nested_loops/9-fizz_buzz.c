@@ -1,4 +1,4 @@
-#include <stdio.h>
+#includei <stdio.h>
 
 /**
  * main-entyr point
@@ -27,12 +27,10 @@ int main(void)
 		{
 			printf("%d", x);
 		}
-		if (x < 100)
-		{
-			putchar(' ');
-		}
+		_putchar(' ');
+		
 	}
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
