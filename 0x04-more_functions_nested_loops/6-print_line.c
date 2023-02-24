@@ -3,9 +3,10 @@
 
 /**
  * print_line- prints a straight line on the terminal
+ * main-check code
  * Should end with a new line;
  * @n: integer input to determine the number of _ to be printed
- * Return: n
+ * Return: 0
  */
 void print_line(int n)
 {
@@ -22,7 +23,7 @@ void print_line(int n)
 	_putchar('\n');
 }
 /**
- * main- check code
+ * main-entry point and code check
  * Return: 0
  */
 int main(void)
