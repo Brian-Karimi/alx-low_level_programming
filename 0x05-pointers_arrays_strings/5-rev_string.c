@@ -15,7 +15,7 @@ void rev_string(char *s)
 	int x;
 	char n;
 
-	while (c != '\0')
+	while (*c != '\0')
 	{
 		c++;
 		length++;
