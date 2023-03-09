@@ -13,6 +13,7 @@ int _sqrt_recursion_wrapper(int n, int ll, int ul)
 	int guess, guessSquared;
 
 	guess = (ul + ll) / 2;
+	guessSquared = guess * guess;
 
 	if (guessSquared == n)
 	{
@@ -28,7 +29,7 @@ int _sqrt_recursion_wrapper(int n, int ll, int ul)
 	}
 	else
 	{
-		return (_sqrt_recursion_wrapper(n, ll, guess + 1));
+		return (_sqrt_recursion_wrapper(n, ll, guess - 1));
 	}
 }
 /**
