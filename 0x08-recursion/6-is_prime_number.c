@@ -23,7 +23,7 @@ int is_prime(unsigned int n, unsigned int comp)
 	return (is_prime(n, (comp + 1)));
 }
 /**
- * _is_prime_number- returns 1 if n is a prime number
+ * is_prime_number- returns 1 if n is a prime number
  * @n: input integer
  * Return: 1 if prime and 0 if otherwise
  */
