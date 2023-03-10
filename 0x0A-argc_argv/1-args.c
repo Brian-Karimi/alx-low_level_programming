@@ -9,7 +9,14 @@
  */
 int main(int argc, char *argv[] __attribute__((__unused__)))
 {
-	printf("%d\n", argc);
+	int max, i = 0;
+
+	while (i < argc)
+	{
+		max = i;
+		i++;
+	}
+	printf("%d\n", m);
 	{
 		return (0);
 	}
