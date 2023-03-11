@@ -21,7 +21,7 @@ int isDig(char num[])
 				return (0);
 			}
 		}
-		return (0);
+		return (1);
 	}
 }
 
