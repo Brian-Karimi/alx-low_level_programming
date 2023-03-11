@@ -16,7 +16,7 @@ int main(int argc, char *argv[] __attribute__((__unused__)))
 		max = i;
 		i++;
 	}
-	printf("%d\n", m);
+	printf("%d\n", max);
 	{
 		return (0);
 	}
