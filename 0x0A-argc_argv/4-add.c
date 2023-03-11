@@ -16,12 +16,12 @@ int isDig(char num[])
 	{
 		for (i = 0; i < len; i++)
 		{
-			if (isdigit(num[i]))
+			if (!isdigit(num[i]))
 			{
-				return (0);
+				return (1);
 			}
 		}
-		return (1);
+		return (0);
 	}
 }
 
