@@ -16,6 +16,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
+	
+	mem = malloc(nmemb * size);
+
 	for (i = 0; i < nmemb * size; i++)
 	{
 		*(mem + 1) = 0;
