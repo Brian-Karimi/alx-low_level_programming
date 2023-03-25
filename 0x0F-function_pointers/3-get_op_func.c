@@ -1,5 +1,7 @@
 #include <stddef.h>
 #include "function_pointers.h"
+#include <stdlib.h>
+#include <string.h>
 
 /**
  * get_op_func-get ops function ptr of type char  array
@@ -21,7 +23,7 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (*s == *ops[i].ops)
+		if (strcmp(s, ops[i].op == 0))
 		{
 			return (ops[i].f);
 		}
