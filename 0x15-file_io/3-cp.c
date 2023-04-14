@@ -32,9 +32,9 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	if (close(source_file == -1) || (dest_file == -1))
+	if (close((source_file) == -1) || (close(dest_file) == -1))
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", source_file);
+		dprintf(STDERR_FILENO, "Error: Can't close source_file, dest_file");
 		exit(100);
 	}
 	return (0);
