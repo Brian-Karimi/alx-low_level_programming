@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 	}
-	if (close((source_file) == -1) || (close(dest_file) == -1))
+	if (close((source_file)) == -1 || (close(dest_file)) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close %d\n", source_file);
 		exit(100);
