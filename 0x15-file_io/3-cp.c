@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 	}
 	if (close((source_file) == -1) || (close(dest_file) == -1))
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close %d\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't close %d\n", source_file);
 		exit(100);
 	}
 	return (0);
