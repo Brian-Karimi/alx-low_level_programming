@@ -10,6 +10,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 
+#define BUFFER_VAR 1024
+
 
 int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
