@@ -13,11 +13,11 @@ void print_binary(unsigned long int n)
 	{
 		if ((n & (1ul << index)) == 0)
 		{
-			printf("0");
+			putchar('0');
 		}
 		else
 		{
-			printf("1");
+			putchar('0');
 		}
 	}
 }
