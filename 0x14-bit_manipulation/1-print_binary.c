@@ -7,17 +7,19 @@
 */
 void print_binary(unsigned long int n)
 {
-	int index;
+	int index = 63;
+	int flag = 0;
+	unsigned long int a_bit = (n >> index) & 1;
 
-	for (index = sizeof(n) * 8 - 1; index >= 0; index--)
+	for (; index >= 0; index--)
 	{
-		if ((n & (1ul << index)) == 0)
+		if (a_bit || flag)
 		{
-			_putchar('0');
-		}
-		else
-		{
-			_putchar('0');
+			_putchar(a_bit ? '1' : '0');
+			flag = 1;
 		}
 	}
-}
+	if (!flag)
+	{
+		_putchar('0');
+	}}
