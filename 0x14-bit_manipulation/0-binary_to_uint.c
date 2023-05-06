@@ -18,8 +18,8 @@ unsigned int strtoi(char str)
 unsigned int _strlen(const char *s)
 {
 	unsigned int i = 0;
-	
-	for(; s[i]; i++)
+
+	for (; s[i]; i++)
 		;
 	return (i);
 }
@@ -27,25 +27,25 @@ unsigned int _strlen(const char *s)
  * binary_to_uint - converts binary num to uint
  * @b: pointer to a string of 0 & 1 chars
  * Return: converted number or
- * 	0 if chars in b != 0 or 1
- * 	0 if b is NULL
+ * 0 if chars in b != 0 or 1
+ * 0 if b is NULL
  */
 unsigned int binary_to_uint(const char *b)
 {
 	int index;
 	unsigned int output, temp_var, expor;
 
-	if(!b)
+	if (!b)
 	{
-		return(0);
+		return (0);
 	}
 
 	output = temp_var = 0;
 	expor = 1;
 
-	for(index = _strlen(b) - 1; b[index]; index--, expor *= 2)
+	for (index = _strlen(b) - 1; b[index]; index--, expor *= 2)
 	{
-		if(b[index] != '0' && b[index] != '1')
+		if (b[index] != '0' && b[index] != '1')
 		{
 			return (0);
 		}
@@ -53,5 +53,5 @@ unsigned int binary_to_uint(const char *b)
 		temp_var = strtoi(b[index]);
 		output += temp_var * expor;
 	}
-	return(output);
+	return (output);
 }

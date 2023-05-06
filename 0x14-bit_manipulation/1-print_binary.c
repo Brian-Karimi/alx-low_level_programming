@@ -7,17 +7,17 @@
 */
 void print_binary(unsigned long int n)
 {
-    int index;
-    
-    for (index = sizeof(n) * 8 - 1; index >= 0; index--)
-    {
-        if ((n & (1 << index)) == 0)
-        {
-            printf("0");
-        }
-        else
-        {
-            printf("1");
-        }
-    }
+	int index;
+
+	for (index = sizeof(n) * 8 - 1; index >= 0; index--)
+	{
+		if ((n & (1 << index)) == 0)
+		{
+			printf("0");
+		}
+		else
+		{
+			printf("1");
+		}
+	}
 }
