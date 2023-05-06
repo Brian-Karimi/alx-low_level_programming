@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	for (index = sizeof(n) * 8 - 1; index >= 0; index--)
 	{
-		if ((n & (1 << index)) == 0)
+		if ((n & (1ul << index)) == 0)
 		{
 			printf("0");
 		}
