@@ -9,35 +9,35 @@
 
 int main(int argc, char *argv[])
 {
-	int src_file, dest_file, source_read;
-	char buffer[BUFFER];
+	int read_fd, write_fd, index;
+	char buffer[BUFFER], *file_from = argv[1], *file_to = argv[2];
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp src_file dest_file\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	src_file = open(argv[1], O_RDONLY);
-	if (src_file == -1)
+	read_fd = open(argv[1], O_RDONLY);
+	if (read_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	dest_file = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	write_fd = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	source_read = read(src_file, buffer, BUFFER);
+	index = read(src_file, buffer, BUFFER);
 
-	while (source_read > 0)
+	while (index > 0)
 	{
-		if (dest_file == -1 || write(dest_file, buffer, source_read) == -1)
+		if (write_fd == -1 || write(write_fd, buffer, index) == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", argv[2]);
 			exit(99);
 		}
 	}
-	if ((close(src_file)) == -1 || (close(dest_file)) == -1)
+	if ((close(read_fd)) == -1 || (close(write_fd)) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", src_file);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", read_fd);
 		exit(100);
 	}
 	return (0);
